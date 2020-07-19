@@ -81,7 +81,7 @@ export const Container = styled.div`
       content: ' ';
       position: absolute;
       top: -1.5em;
-      left: 0em;
+      left: -1em;
       width: 7.1em;
       height: 6.2em;
       background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;

@@ -6,7 +6,7 @@ export default function PageLayout({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>Base Next.js App</title>
+        <title>PodCodar Code School</title>
       </Head>
 
       <Component {...pageProps} />
