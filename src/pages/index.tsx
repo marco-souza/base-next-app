@@ -13,7 +13,7 @@ interface Props {
 }
 
 export default function Home({ repos }: Props) {
-  return <RetroWaveSection title="Welcome to my" subtitle="Next React Project" />;
+  return <RetroWaveSection title="Welcome to my" subtitle="Next.js Base Project" />;
 }
 
 export async function getStaticProps() {

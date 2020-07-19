@@ -1,14 +1,17 @@
 {
-  "name": "podcodar-webapp",
+  "name": "nase-next-webapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://marco-souza.github.io/base-next-app",
   "scripts": {
     "dev": "next dev",
     "lint": "prettier --check .",
     "fmt": "prettier --write .",
     "build": "next build && next export",
     "start": "next start",
-    "test": "echo 'You need to create tests'"
+    "test": "echo 'You need to create tests'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "antd": "^4.3.5",
@@ -30,6 +33,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
+    "gh-pages": "^3.1.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5"
