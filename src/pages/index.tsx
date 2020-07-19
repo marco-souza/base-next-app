@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { useEffect } from 'react';
 import RetroWaveSection from 'components/RetroWareSection';
 
@@ -14,10 +13,7 @@ interface Props {
 }
 
 export default function Home({ repos }: Props) {
-  useEffect(() => {
-    fetch(`https://api.github.com/orgs/podcodar/repos`);
-  });
-  return <RetroWaveSection title="PodCodar" subtitle="Code School" />;
+  return <RetroWaveSection title="Welcome to my" subtitle="Next React Project" />;
 }
 
 export async function getStaticProps() {
