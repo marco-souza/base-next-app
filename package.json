@@ -36,7 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn fmt && git add -u",
+      "pre-commit": "yarn fmt && git update-index --again",
       "pre-push": "npm test"
     }
   }
