@@ -13,11 +13,11 @@ interface Props {
 }
 
 export default function Home({ repos }: Props) {
-  return <RetroWaveSection title="PodCodar" subtitle="Code School" />;
+  return <RetroWaveSection title="Welcome to" subtitle="Next.js base project" />;
 }
 
 export async function getStaticProps() {
-  const response = await fetch(`https://api.github.com/orgs/podcodar/repos`);
+  const response = await fetch(`https://api.github.com/users/marco-souza/repos`);
   const repos = await response.json();
 
   return { props: { repos } };
