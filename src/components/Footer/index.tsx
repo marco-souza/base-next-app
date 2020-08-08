@@ -5,7 +5,7 @@ const { Footer } = Layout;
 export default function LayoutFooter() {
   return (
     <>
-      <Footer>Footer</Footer>
+      <Footer></Footer>
     </>
   );
 }

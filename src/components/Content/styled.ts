@@ -8,12 +8,16 @@ export const Breadcrumb = styled(Bd)`
 export const Content = styled(Layout.Content)`
   padding: 24px;
   min-height: 280px;
-  padding: 0 50px;
+  padding: '0 50px';
 `;
 
 export const Container = styled.div`
   background: #fff;
-  padding: 24px;
+  padding: 1.5rem;
   min-height: 280px;
-  padding: '0 50px';
+
+  &,
+  & iframe {
+    border-radius: 3px;
+  }
 `;
