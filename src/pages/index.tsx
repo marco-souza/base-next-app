@@ -1,24 +1,16 @@
-import { useEffect } from 'react';
-import RetroWaveSection from 'components/RetroWareSection';
-
-interface Repo {
-  id: string;
-  html_url: string;
-  name: string;
-  description: string;
-}
+import { GithubProfileResponse } from 'api/types';
 
 interface Props {
-  repos: Repo[];
+  profile: GithubProfileResponse;
 }
 
-export default function Home({ repos }: Props) {
-  return <RetroWaveSection title="Welcome to" subtitle="Next.js base project" />;
+export default function Home({ profile }: Props) {
+  return <code>{JSON.stringify(profile)}</code>;
 }
 
 export async function getStaticProps() {
-  const response = await fetch(`https://api.github.com/users/marco-souza/repos`);
-  const repos = await response.json();
+  const response = await fetch(`https://api.github.com/users/marco-souza`);
+  const profile = await response.json();
 
-  return { props: { repos } };
+  return { props: { profile } };
 }
