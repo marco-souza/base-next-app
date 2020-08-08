@@ -1,4 +1,9 @@
+import { Layout } from 'antd';
 import Head from 'next/head';
+import LayoutHeader from 'components/Header';
+import LayoutContent from 'components/Content';
+import LayoutFooter from 'components/Footer';
+
 import 'pages/styles.css';
 
 export default function PageLayout({ Component, pageProps }) {
@@ -9,7 +14,15 @@ export default function PageLayout({ Component, pageProps }) {
         <title>Next.js Base Project</title>
       </Head>
 
-      <Component {...pageProps} />
+      <Layout>
+        <LayoutHeader />
+
+        <LayoutContent>
+          <Component {...pageProps} />
+        </LayoutContent>
+
+        <LayoutFooter />
+      </Layout>
     </>
   );
 }
