@@ -4,7 +4,7 @@ import { LogoContainer } from './styled';
 
 const { Header } = Layout;
 
-export default function LayoutHeader() {
+export default function LayoutHeader(): JSX.Element {
   return (
     <>
       <Header>

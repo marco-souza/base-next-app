@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export interface GithubProfileResponse {
   login: string;
   id: string;

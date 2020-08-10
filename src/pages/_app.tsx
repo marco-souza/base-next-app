@@ -1,12 +1,22 @@
 import { Layout } from 'antd';
 import Head from 'next/head';
-import LayoutHeader from 'components/Header';
+import { ComponentType } from 'react';
+
 import LayoutContent from 'components/Content';
 import LayoutFooter from 'components/Footer';
+import LayoutHeader from 'components/Header';
 
 import 'pages/styles.css';
 
-export default function PageLayout({ Component, pageProps }) {
+export interface PageLayoutProps {
+  Component: ComponentType;
+  pageProps: unknown;
+}
+
+export default function PageLayout({
+  Component,
+  pageProps,
+}: PageLayoutProps): JSX.Element {
   return (
     <>
       <Head>

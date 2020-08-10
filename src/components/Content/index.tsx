@@ -1,6 +1,12 @@
 import { Breadcrumb, Content, Container } from './styled';
 
-export default function LayoutContent({ children }) {
+export interface LayoutContentProps {
+  children: JSX.Element;
+}
+
+export default function LayoutContent({
+  children,
+}: LayoutContentProps): JSX.Element {
   return (
     <>
       <Content>
