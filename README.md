@@ -22,6 +22,10 @@ This project also contains a preset environment with:
 First, run the development server:
 
 ```bash
+npm install
+# or 
+yarn
+
 npm run dev
 # or
 yarn dev
