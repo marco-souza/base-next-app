@@ -7,7 +7,9 @@ extends:
   - plugin:import/errors
   - plugin:import/warnings
   - plugin:import/typescript
-plugins: ['prettier', import]
+  - plugin:jest/recommended
+  - plugin:jest/style
+plugins: [prettier, jest, import, testing-library]
 rules:
   prettier/prettier: error
   react/jsx-filename-extension: [warn, { extensions: ['.tsx'] }]
@@ -28,3 +30,13 @@ rules:
 globals: { React: 'writable' }
 settings:
   import/resolver: { node: { 'moduleDirectory': ['node_modules', 'src'] } }
+
+overrides:
+  - files: ['*.test.*', 'testUtils.tsx']
+    rules:
+      {
+        '@typescript-eslint/explicit-function-return-type': ['off'],
+        '@typescript-eslint/no-explicit-any': ['off'],
+        'import/no-extraneous-dependencies': ['off'],
+        '@typescript-eslint/explicit-module-boundary-types': ['off'],
+      }
