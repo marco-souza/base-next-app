@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { GithubProfileResponse } from 'api/types';
 
 export interface HomeProps {
@@ -27,6 +29,5 @@ interface StaticProps {
 export async function getStaticProps(): Promise<StaticProps> {
   const response = await fetch(`https://api.github.com/users/marco-souza`);
   const profile = await response.json();
-
   return { props: { profile } };
 }

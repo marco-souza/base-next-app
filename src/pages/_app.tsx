@@ -1,6 +1,6 @@
 import { Layout } from 'antd';
 import Head from 'next/head';
-import { ComponentType } from 'react';
+import React from 'react';
 
 import LayoutContent from 'components/Content';
 import LayoutFooter from 'components/Footer';
@@ -9,7 +9,7 @@ import LayoutHeader from 'components/Header';
 import 'pages/styles.css';
 
 export interface PageLayoutProps {
-  Component: ComponentType;
+  Component: React.ComponentType;
   pageProps: unknown;
 }
 
