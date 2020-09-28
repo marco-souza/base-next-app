@@ -6,7 +6,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This project also contains a preset environment with:
 
-- Redux
 - Ant Design
 - linter + code style:
   - prettier
