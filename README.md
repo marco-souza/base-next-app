@@ -22,7 +22,7 @@ First, run the development server:
 
 ```bash
 npm install
-# or 
+# or
 yarn
 
 npm run dev

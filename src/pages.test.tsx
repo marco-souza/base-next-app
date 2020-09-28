@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 import React from 'react';
 
 import { setupComponentForTest } from 'helpers/testUtils';
 
-import AppLayout from './_app';
-
-import Home, { getStaticProps } from './index';
+import Home, { getStaticProps } from './pages';
+import AppLayout from './pages/_app';
 
 describe(`Page tests`, () => {
   const TestComponent = () => <p data-testid="test-component">test</p>;
