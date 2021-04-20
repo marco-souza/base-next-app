@@ -1,6 +1,8 @@
-import { Breadcrumb, Content, Container } from './styled';
+import React from 'react';
 
-export interface LayoutContentProps {
+import { Breadcrumb, Content, Container } from 'components/@core/styled';
+
+interface LayoutContentProps {
   children: JSX.Element;
 }
 
@@ -9,7 +11,7 @@ export default function LayoutContent({
 }: LayoutContentProps): JSX.Element {
   return (
     <>
-      <Content>
+      <Content data-testid="content">
         <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>List</Breadcrumb.Item>
